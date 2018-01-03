@@ -1,0 +1,21 @@
+{{outlet}}
+<div class="row">
+	<div class="col-lg-4 offset-lg-4">
+		<table class="table table-dark col">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+			</tr>
+		</thead>
+		<tbody>
+		{{#each model as |student|}}
+			<tr>
+				<td>{{student.name}}</td>
+				<td>{{student.age}}</td>
+			</tr>
+		{{/each}}
+		</tbody>
+		</table>
+	</div>
+</div>
